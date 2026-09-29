@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4f8cff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Home Command Center</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="clock" id="clock">--:--</div>
+      <div class="date" id="date"></div>
+    </div>
+    <div class="greeting" id="greeting"></div>
+    <button class="icon-btn" id="parentBtn" aria-label="Parent settings" title="Parent settings">⚙️</button>
+  </header>
+
+  <div class="next-up" id="nextUp" hidden></div>
+
+  <main class="layout">
+    <section class="kids" id="kids" aria-label="Chores"></section>
+
+    <aside class="side">
+      <section class="panel">
+        <h2>📅 Coming Up</h2>
+        <div id="agenda" class="agenda"><p class="muted">Loading…</p></div>
+      </section>
+      <section class="panel">
+        <h2>💡 Fact of the Day</h2>
+        <div id="facts" class="facts"></div>
+      </section>
+    </aside>
+  </main>
+
+  <div class="celebrate" id="celebrate" aria-live="polite"></div>
+
+  <!-- Parent area -->
+  <dialog id="parentDialog" class="dialog">
+    <div class="dialog-inner" id="parentContent"></div>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

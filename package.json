@@ -1,0 +1,28 @@
+{
+  "name": "home-command-center",
+  "version": "1.0.0",
+  "description": "A family command center for kids: chores, upcoming practices from Google Calendar, and an age-appropriate fact of the day.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joery2210/HomeCommandCenter.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joery2210/HomeCommandCenter/issues"
+  },
+  "homepage": "https://github.com/joery2210/HomeCommandCenter#readme",
+  "dependencies": {
+    "node-ical": "^0.27.2"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}
